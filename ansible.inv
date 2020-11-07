@@ -1,4 +1,4 @@
 [SIT]
 
-192.168.12.222 ansible_ssh_pass=ansible ansible_ssh_user=ansible
-192.168.12.223 ansible_ssh_pass=ansible ansible_ssh_user=ansible
+192.168.12.222 ansible_ssh_pass=ansible ansible_ssh_user=ansible ansible_python_interpreter=/usr/bin/python3
+192.168.12.223 ansible_ssh_pass=ansible ansible_ssh_user=ansible ansible_python_interpreter=/usr/bin/python3
