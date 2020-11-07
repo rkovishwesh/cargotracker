@@ -13,7 +13,10 @@
      force_basic_auth: True
      dest: /var/lib/tomcat9/webapps/sample/
   - name: Unzip WAR file
-    unarchive: src=http://192.168.12.112:8081/repository/maven-nexus-repo/net/java/cargo-tracker/1.0-SNAPSHOT/cargo-tracker-1.0-20201104.102504-1.war dest=/$
+    unarchive:
+      src: /var/lib/tomcat9/webapps/sample/cargo-tracker-1.0-20201104.102504-1.war
+      dest: /var/lib/tomcat9/webapps/sample/
+      remote_src: yes
     notify:
         - Restart tomcat9
 
